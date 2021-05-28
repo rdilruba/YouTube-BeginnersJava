@@ -15,6 +15,21 @@ public class ObjectFactory {
 		secondPen.color = "Mavi";
 		secondPen.height = 8;
 		secondPen.writeMessage(secondPen.color + " " + secondPen.height);
+		
+		Car car = new Car();
+		car.numberOfSeats = 5;
+		car.numberOfWheels = 4;
+		
+		Bicycle bicycle = new Bicycle();
+		bicycle.numberOfSeats = 1;
+		bicycle.numberOfWheels = 2;
+
+		Vehicle car2 = new Car();
+		
+		car.start();
+		bicycle.start();
+		car2.start();
+		
 	}
 
 }
