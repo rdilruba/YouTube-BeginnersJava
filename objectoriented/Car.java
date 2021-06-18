@@ -2,7 +2,7 @@ package objectoriented;
 
 public class Car extends Vehicle {
 
-	void start() {
+	public void start() {
 		System.out.println("Araba çalýþýyor...");
 	}
 }

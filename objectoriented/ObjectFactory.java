@@ -24,12 +24,19 @@ public class ObjectFactory {
 		bicycle.numberOfSeats = 1;
 		bicycle.numberOfWheels = 2;
 
-		Vehicle car2 = new Car();
+		Vehicle car2 = new Car(); //Polymorphism
+		Engine engine = new Car(); //Polymorphism
+		car2.stop();
 		
 		car.start();
 		bicycle.start();
 		car2.start();
 		
+		//Polymorphism usage example
+		Vehicle[] vehicles = new Vehicle[10];
+		vehicles[0] = car;
+		vehicles[1] = bicycle;
+		vehicles[2] = car2;
 	}
 
 }
