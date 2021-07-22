@@ -8,4 +8,7 @@ public class Bicycle extends Vehicle {
 		return this.privateColor;
 	}
 	
+	public void setPrivateColor(String privateColor) {
+		this.privateColor = privateColor;
+	}
 }

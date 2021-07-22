@@ -5,24 +5,24 @@ public class ObjectFactory {
 	public static void main(String[] args) {
 		
 		Pen firstPen = new Pen();
-		firstPen.color = "Pembe";
-		firstPen.height = 10;
+		firstPen.setColor("red");
+		firstPen.setHeight(10);
 		String message = "Ýlk kalem üretildi.";
 		
 		firstPen.writeMessage(message);
 		
 		Pen secondPen = new Pen();
-		secondPen.color = "Mavi";
-		secondPen.height = 8;
-		secondPen.writeMessage(secondPen.color + " " + secondPen.height);
+		secondPen.setColor("blue"); //encapsulation
+		secondPen.setHeight(8);
+		secondPen.writeMessage(secondPen.getColor() + " " + secondPen.getHeight());
 		
 		Car car = new Car();
-		car.numberOfSeats = 5;
-		car.numberOfWheels = 4;
+		car.setNumberOfSeats(5);
+		car.setNumberOfWheels(4);
 		
 		Bicycle bicycle = new Bicycle();
-		bicycle.numberOfSeats = 1;
-		bicycle.numberOfWheels = 2;
+		bicycle.setNumberOfSeats(1);
+		bicycle.setNumberOfWheels(2);
 
 		Vehicle car2 = new Car(); //Polymorphism
 		Engine engine = new Car(); //Polymorphism
